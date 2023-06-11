@@ -41,15 +41,46 @@ A Synchronous counter is the counter in which the clock input with all the flip-
 
 
 ## Program:
-
+~~~
+Up Counter:
+module exp6(clk,q1,q2,q3,q4);
+input clk;
+output reg q1,q2,q3,q4;
+always @(posedge clk)
+begin
+q4=(q1&q2&q3)^q4;
+q3=(q1&q2)^q3;
+q2=q1^q2;
+q1=1^q1;
+end
+endmodule
+~~~
+~~~
+Down Counter:
+module exp6b(clk,q1,q2,q3,q4);
+input clk;
+output reg q1,q2,q3,q4;
+always @(posedge clk)
+begin
+q4=((~q3)&(~q2)&(~q1))^q4;
+q3=((~q2)&(~q1))^q3;
+q2=(~q1)^q2;
+q1=1^q1;
+end
+endmodule
+~~~
 
 ## RTL Schematic:
 
+<img width="462" alt="exp6adia" src="https://github.com/Divyagitup/Counter/assets/134514564/20ce5cfe-1ee5-4dc9-ad25-e6179096bbcc">
+![exp6bdia](https://github.com/Divyagitup/Counter/assets/134514564/dcdd0c57-dc1d-4932-9275-24309ce200cf)
 
 
 
 ## Timing Diagram:
+<img width="644" alt="exp6aout" src="https://github.com/Divyagitup/Counter/assets/134514564/0fa72550-59ad-4bfb-8b79-ea5600f4d0bd">
 
+![exp6bout](https://github.com/Divyagitup/Counter/assets/134514564/ef02d068-89f2-454d-89da-3beb9387abc5)
 
 
 ## Result:
