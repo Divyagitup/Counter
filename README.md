@@ -73,7 +73,7 @@ endmodule
 ## RTL Schematic:
 
 <img width="462" alt="exp6adia" src="https://github.com/Divyagitup/Counter/assets/134514564/20ce5cfe-1ee5-4dc9-ad25-e6179096bbcc">
-![exp6bdia](https://github.com/Divyagitup/Counter/assets/134514564/dcdd0c57-dc1d-4932-9275-24309ce200cf)
+![exp6bdia](https://github.com/Divyagitup/Counter/assets/134514564/dcdd0c57-dc1d-4932-9275-24309ce200cf) 
 
 
 
